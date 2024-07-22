@@ -1,0 +1,21 @@
+* {
+    color: brown;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.noidung {
+    color: rgb(144, 0, 255);
+    font-size: 20px;
+}
+
+.noidung:hover {
+    color: green;
+    font-size: 50px;
+}
+
+#noidung2 {
+    color: yellow;
+}

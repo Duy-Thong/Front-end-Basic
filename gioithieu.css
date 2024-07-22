@@ -1,0 +1,20 @@
+#gioithieu {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: blue;
+}
+
+.avatar {
+    width: 250px;
+    height: auto;
+}
+
+.avatar:hover {
+    transform: scale(1.1);
+    transition: ease-in-out 1s;
+
+}
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
