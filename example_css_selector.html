@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Các loại CSS selector</title>
+
+    <style>
+      /* selector tất cả phần tử */
+      * {
+        font-family: "Courier New", Courier, monospace;
+      }
+      /* Selector phần tử */
+      h1 {
+        color: blue;
+        text-align: center;
+      }
+
+      /* Selector lớp , dùng dấu . */
+      .highlight {
+        background-color: yellow;
+        padding: 10px;
+      }
+
+      /* Selector id ,dùng dấu #*/
+      #section1 {
+        border: 1px solid gray;
+        margin: 10px;
+        padding: 10px;
+      }
+      /* selector pseudo-class */
+
+      a:hover {
+        color: red;
+        font-size: large;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tiêu đề chính</h1>
+
+    <div id="section1">
+      <h2 class="highlight">Phần 1</h2>
+      <p>Đây là đoạn văn bản trong phần 1.</p>
+      <p class="highlight">Đây là đoạn văn bản được làm nổi bật.</p>
+    </div>
+
+    <h2>Phần 2</h2>
+    <p>Đây là đoạn văn bản trong phần 2.</p>
+
+    <h3>Links</h3>
+    <p><a href="https://www.example.com">Link thông thường</a></p>
+    <p>
+      <ad href="https://www.example.com" target="_blank"
+        >Link mở trong tab mới</ad
+      >
+    </p>
+  </body>
+</html>

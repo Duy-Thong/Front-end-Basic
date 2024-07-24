@@ -1,0 +1,36 @@
+/* styles.css */
+h1 {
+    text-align: center;
+}
+
+p {
+    color: black;
+    /* mặc định màu chữ cho đoạn văn bản */
+    font-size: 16px;
+    /* kích thước font chữ mặc định */
+    font-family: Arial, sans-serif;
+}
+
+.red-text {
+    color: red;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+}
+
+.intro {
+    font-size: 14px;
+    font-family: "Courier New", Courier, monospace;
+}
+
+img {
+    width: 40%;
+    border: 2px solid blue;
+    display: block;
+    /* đảm bảo hình ảnh hiển thị thành block element */
+    margin: 0 auto;
+    /* căn giữa hình ảnh */
+}
+
+hr {
+    border-top: 1px dashed gray;
+}

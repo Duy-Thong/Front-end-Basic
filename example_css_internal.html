@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <title>HTML với CSS internal</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+
+      p {
+        color: black; /* mặc định màu chữ cho đoạn văn bản */
+        font-size: 16px; /* kích thước font chữ mặc định */
+        font-family: Arial, sans-serif;
+      }
+      .red-text {
+        color: red;
+        font-size: 18px;
+        font-family: Arial, sans-serif;
+      }
+      .intro {
+        font-size: 14px;
+        font-family: "Courier New", Courier, monospace;
+      }
+      img {
+        width: 40%;
+        border: 2px solid blue;
+        display: block; /* đảm bảo hình ảnh hiển thị thành block element */
+        margin: 0 auto; /* căn giữa hình ảnh */
+      }
+      hr {
+        border-top: 1px dashed gray;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tiêu đề</h1>
+    <p class="intro">
+      CSS internal là Styling được đặt trong phần style của HTML.
+      <br />
+      Cần đặt tên class cho các phần tử cần định dạng để select cho đúng.
+    </p>
+    <p class="red-text">
+      Đây là đoạn văn bản được định dạng bằng CSS internal.
+    </p>
+
+    <img
+      src="https://static-images.vnncdn.net/vps_images_publish/000001/000003/2024/7/24/452525962-3843678945863454-5931672519614014303-n-1750.jpg?width=0&amp;s=Nze6j-r7ppXs2z62JuEwHg"
+      alt="Mô tả ảnh"
+    />
+    <hr />
+  </body>
+</html>
