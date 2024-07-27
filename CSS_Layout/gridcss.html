@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            grid-template-columns: 1fr 1fr 1fr;
+            width: 80%;
+            max-width: 800px;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            gap: 10px;
+        }
+
+        .header {
+            grid-column: 1 / -1;
+            background-color: #3FA2F6;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+        }
+
+        .footer {
+            grid-column: 1 / -1;
+            background-color: #3FA2F6;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            border-radius: 0 0 8px 8px;
+        }
+
+        .box {
+            background-color: #96C9F4;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 4px;
+        }
+
+        .content1 { grid-area: 1 / 1 / 2 / 2; }
+        .content2 { grid-area: 1 / 2 / 2 / 3; }
+        .content3 { grid-area: 1 / 3 / 2 / 4; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>CSS Grid Layout</h1>
+        </div>
+        <div class="box content1">Box 1</div>
+        <div class="box content2">Box 2</div>
+        <div class="box content3">Box 3</div>
+        <div class="footer">
+            <p>Footer Content</p>
+        </div>
+    </div>
+</body>
+</html>

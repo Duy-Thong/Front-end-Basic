@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Example</title>
+    <style>
+      .container {
+        display: flex;
+        flex-wrap: nowrap;
+        height: 100vh;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .item {
+        width: 30%;
+        height: 100px;
+        background-color: rosybrown;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">
+        <p>Paragraph1</p>
+        <img
+          src="https://via.placeholder.com/150"
+          alt="placeholder"
+          width="200px"
+        />
+      </div>
+      <div class="item">
+        <p>Paragraph2</p>
+      </div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+    </div>
+  </body>
+</html>
