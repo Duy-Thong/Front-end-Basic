@@ -1,56 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS Position Example</title>
+    <title>Demo các loại Position trong CSS</title>
     <style>
-      .static {
-        position: static;
-        background-color: lightblue;
+      /* Container để hiển thị các loại position */
+      .container {
+        margin: 20px;
       }
 
-      .relative {
+      /* Position static (mặc định) */
+      .static-box {
+        position: static;
+        background-color: #faffaf;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+
+      /* Position relative */
+      .relative-box {
         position: relative;
+        background-color: #96c9f4;
+        padding: 10px;
+        margin-bottom: 10px;
         top: 20px;
         left: 20px;
-        background-color: lightgreen;
       }
 
-      .absolute {
+      /* Position absolute */
+      .absolute-container {
+        position: relative;
+        height: 200px;
+        background-color: #f0f0f0;
+        margin-bottom: 10px;
+      }
+
+      .absolute-box {
         position: absolute;
+        background-color: #3fa2f6;
+        padding: 10px;
         top: 50px;
         left: 50px;
-        background-color: lightcoral;
       }
 
-      .fixed {
+      /* Position fixed */
+      .fixed-box {
         position: fixed;
-        bottom: 10px;
+        background-color: #0f67b1;
+        padding: 10px;
+        top: 10px;
         right: 10px;
-        background-color: #ffe9d0;
+        color: white;
       }
 
+      /* Position sticky */
       .sticky-container {
-        height: 2000px;
-        background-color: lightgrey;
+        height: 300px;
+        overflow: auto;
+        background-color: #f9f9f9;
+        padding: 10px;
       }
 
-      .sticky {
-        position: -webkit-sticky; /* For Safari */
+      .sticky-box {
+        position: -webkit-sticky; /* Safari */
         position: sticky;
+        background-color: #faffaf;
+        padding: 10px;
         top: 0;
-        background-color: lightpink;
+      }
+
+      .content {
+        height: 600px;
+        background-color: #e0e0e0;
       }
     </style>
   </head>
   <body>
-    <div class="static">Static Position</div>
-    <div class="relative">Relative Position</div>
-    <div class="absolute">Absolute Position</div>
-    <div class="fixed">Fixed Position</div>
-    <div class="sticky-container">
-      <div class="sticky">Sticky Position</div>
+    <div class="container">
+      <h2>Position static</h2>
+      <div class="static-box">
+        Đây là một phần tử với position: static (mặc định).
+      </div>
+
+      <h2>Position relative</h2>
+      <div class="relative-box">Đây là một phần tử với position: relative.</div>
+
+      <h2>Position absolute</h2>
+      <div class="absolute-container">
+        <div class="absolute-box">
+          Đây là một phần tử với position: absolute.
+        </div>
+      </div>
+
+      <h2>Position fixed</h2>
+      <div class="fixed-box">Đây là một phần tử với position: fixed.</div>
+
+      <h2>Position sticky</h2>
+      <div class="sticky-container">
+        <div class="sticky-box">Đây là một phần tử với position: sticky.</div>
+        <div class="content">Cuộn xuống để thấy phần tử sticky hoạt động.</div>
+      </div>
     </div>
   </body>
 </html>
