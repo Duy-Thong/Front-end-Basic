@@ -1,3 +1,4 @@
+/* Đặt các giá trị mặc định cho toàn bộ trang */
 * {
     margin: 0;
     padding: 0;
@@ -8,6 +9,7 @@
     list-style: none;
 }
 
+/* Tạo nền chuyển động cho trang , copy ở đây : https: //codepen.io/P1N2O/pen/pyBNzX */
 body {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
@@ -16,6 +18,7 @@ body {
     color: white;
 }
 
+/* Định nghĩa keyframes cho hiệu ứng chuyển động của nền, cũng là copy từ link ở trên */
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
@@ -30,91 +33,137 @@ body {
     }
 }
 
+/* Định dạng cho header cố định ở trên cùng của trang */
 header {
     position: fixed;
+    /* Cố định header ở trên cùng */
     width: 100%;
+    /* Chiều rộng 100% */
     top: 0;
+    /* Cố định ở trên cùng */
     right: 0;
+    /* Cố định ở bên phải */
     z-index: 1000;
+    /* Độ ưu tiên cao nhất, luôn nằm ở layer trên cùng  */
     display: flex;
+    /* Hiển thị theo kiểu flexbox */
     align-items: center;
+    /* Căn giữa theo chiều dọc */
     justify-content: space-between;
+    /* Căn giữa theo chiều ngang */
     padding: 22px 15%;
-    transition: all .30s ease;
+    /* Khoảng cách giữa các phần tử trong header */
+
     background: rgba(0, 0, 0, 0.2);
+    /* Màu nền với độ trong suốt 0.2 */
 }
 
+/* Định dạng logo ( chữ RuyThong ) */
 .logo {
     color: white;
     font-size: 40px;
+    /* Kích thước chữ */
     font-weight: 700;
+    /* Độ đậm */
     letter-spacing: 1px;
+    /* Khoảng cách giữa các chữ cái */
 }
 
+/* Thay đổi màu cho một phần của logo */
 .logo span {
+    /* select phần tử span ở trong class logo */
     color: deeppink;
 }
 
+/* Định dạng danh sách menu điều hướng */
 .navlist {
     display: flex;
+    /* Hiển thị theo kiểu flexbox */
 }
 
+/* Định dạng từng mục trong menu điều hướng */
 .navlist li {
     margin-left: 30px;
+    /* Khoảng cách giữa các mục */
 }
 
+/* Định dạng liên kết trong menu điều hướng */
 .navlist a {
     color: white;
     font-size: 18px;
     font-weight: 300;
 }
 
+/* Định dạng chung cho các section ( các trang home, about, contact,...) */
 section {
     margin: 20px;
+    /* Khoảng cách giữa các section */
     width: 100%;
+    /* Chiều rộng 100% */
     display: flex;
+    /* Hiển thị theo kiểu flexbox */
     flex-wrap: wrap;
+    /* Cho phép các phần tử con tự động xuống dòng khi không đủ chỗ */
     justify-content: center;
+    /* Căn giữa theo chiều ngang */
     align-items: center;
+    /* Căn giữa theo chiều dọc */
     margin-top: 100px;
+    /* Khoảng cách từ header đến section */
     max-height: fit-content;
+    /* Chiều cao tối đa là chiều cao của nội dung */
 }
 
+/* Định dạng container chính cho phần giới thiệu ( nằm trong section ) */
 .home-container {
     padding-top: 5%;
+    /* Khoảng cách từ phần giới thiệu đến phần trên cùng */
     width: 70%;
+    /* Chiều rộng 70%, tức là 70% chiều ngang của section */
     display: flex;
+    /* Hiển thị theo kiểu flexbox */
     flex-wrap: wrap;
+    /* Cho phép các phần tử con tự động xuống dòng khi không đủ chỗ */
     align-items: center;
+    /* Căn giữa theo chiều dọc */
     justify-content: space-between;
+    /* Căn giữa theo chiều ngang và tạo khoảng cách giữa các phần tử */
     gap: 2rem;
+    /* Khoảng cách giữa các phần tử */
 }
 
+/* Định dạng phần văn bản giới thiệu */
 .intro-text {
     display: flex;
+    /* Hiển thị theo kiểu flexbox */
     flex-direction: column;
-
+    /* Hiển thị theo kiểu cột */
     flex: 6;
+    /* Chiếm 6/12 phần tử */
 }
 
+/* Định dạng tiêu đề chính trong phần giới thiệu */
 .intro-text h1 {
     font-size: 50px;
     font-weight: 700;
     margin-bottom: 10px;
 }
 
+/* Định dạng tiêu đề phụ trong phần giới thiệu */
 .intro-text h2 {
     font-size: 20px;
     font-weight: 300;
     margin-bottom: 20px;
 }
 
+/* Định dạng đoạn văn bản trong phần giới thiệu */
 .intro-text p {
     font-size: 15px;
     font-weight: 200;
     margin-bottom: 20px;
 }
 
+/* Định dạng nút trong phần giới thiệu */
 .intro-text button {
     width: 40%;
     padding: 10px 20px;
@@ -128,20 +177,26 @@ section {
     overflow: hidden;
 }
 
+/* Định dạng phần chứa hình ảnh giới thiệu */
 .intro-image {
     display: flex;
+    /* Hiển thị theo kiểu flexbox */
     justify-content: center;
     align-items: center;
     flex: 4;
+    /* Chiếm 4/12 phần tử */
 }
 
+/* Định dạng cho hình ảnh giới thiệu với hiệu ứng hoạt hình */
 .intro-image img {
     height: 370px;
     width: 350px;
     object-fit: cover;
     animation: animate 3s infinite linear alternate;
+    /* Áp dụng hiệu ứng animate, cái này copy trên mạng */
 }
 
+/* Định nghĩa keyframes cho hiệu ứng động của hình ảnh */
 @keyframes animate {
     0% {
         border-radius: 60% 40% 35% 70% / 60% 30% 65% 40%;
@@ -156,6 +211,7 @@ section {
     }
 }
 
+/* Định dạng phần liên kết mạng xã hội trong phần giới thiệu */
 .intro-social {
     padding-left: 20px;
     display: flex;
@@ -165,12 +221,14 @@ section {
     justify-content: flex-start;
 }
 
+/* Định dạng liên kết mạng xã hội */
 .intro-social a {
     color: white;
     margin-bottom: 10px;
     margin-top: 10px;
 }
 
+/* Định dạng icon mạng xã hội */
 .intro-social a i {
     font-size: 25px;
     margin-right: 10px;
