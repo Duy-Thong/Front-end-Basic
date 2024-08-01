@@ -1,0 +1,10 @@
+1. https://10015.io/
+- web này có rất nhiều tool hữu ích cho việc phát triển web
+2. https://uiverse.io/
+- rất nhiều thành phần có sẵn như form, button, card,...
+3. css-tricks.com
+- rất nhiều kiến thức về css và html
+4. https://animated-gradient-background-generator.netlify.app/
+- tạo background gradient đẹp mắt
+5. https://www.cssportal.com/
+- 1 tỉ tool để tạo css 

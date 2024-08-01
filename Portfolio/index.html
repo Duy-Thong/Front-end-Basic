@@ -2,19 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- đây là khai báo bảng mã, tiếng Việt dùng UTF8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <!-- đây là khai báo cho responsive, sẽ hướng dẫn sau -->
     <!-- main css -->
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
+    <!--cái này là thư viện ngoài để lấy icon, sẽ hướng dẫn sau -->
     <title>Portfolio</title>
   </head>
   <body>
     <header>
+      <!-- đây là phần header, nằm cố định ở cạnh trên-->
       <a href="#" class="logo">Ruy<span>Thong</span></a>
       <ul class="navlist">
         <li><a href="#home" class="active">Home</a></li>
@@ -24,8 +26,39 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </header>
-    <section>
+    <!-- đây là phần section, nơi chứa nội dung chính của trang web, bắt đầu với section home , thêm các trang contact, about thì viết thêm section -->
+    <section class="home" id="home">
       <div class="home-container">
+        <!-- đây là phần chứa nội dung của section home -->
+        <div class="intro-text">
+          <h1>Hi, I'm Duy Thong</h1>
+          <h2>Beginner <span>Developer.</span></h2>
+          <p>I'm learning web development with HTML and CSS</p>
+          <a href="#contact" class="button"
+            ><button>
+              Contact me
+              <span><i class="fa-solid fa-paper-plane"></i></span></button
+          ></a>
+        </div>
+        <div class="intro-image">
+          <img src="img.jpg" alt="intro-image" />
+        </div>
+        <div class="intro-social">
+          <a href="https://www.facebook.com/duythong27"
+            ><span><i class="fa-brands fa-facebook"></i></span
+          ></a>
+          <a href="https://www.instagram.com/duythong27"
+            ><span><i class="fa-brands fa-instagram"></i></span>
+          </a>
+          <a href="https://github.com/Duy-Thong">
+            <span><i class="fa-brands fa-github"></i></span
+          ></a>
+        </div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="home-container">
+        <!-- đây là phần chứa nội dung của section home -->
         <div class="intro-text">
           <h1>Hi, I'm Duy Thong</h1>
           <h2>Beginner <span>Developer.</span></h2>
