@@ -5,6 +5,7 @@
 3. css-tricks.com
 - rất nhiều kiến thức về css và html
 4. https://animated-gradient-background-generator.netlify.app/
-- tạo background gradient đẹp mắt
+- tạo background gradient đẹp mắt và chuyển động
 5. https://www.cssportal.com/
-- 1 tỉ tool để tạo css 
+- 1 tỉ tool để tạo css  đẹp mắt
+
