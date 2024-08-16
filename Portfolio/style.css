@@ -164,18 +164,6 @@ section {
 }
 
 /* Định dạng nút trong phần giới thiệu */
-.intro-text button {
-    width: 60%;
-    padding: 10px 20px;
-    background: deeppink;
-    color: white;
-    font-size: 18px;
-    font-weight: 500;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    overflow: hidden;
-}
 
 /* Định dạng phần chứa hình ảnh giới thiệu */
 .intro-image {
@@ -232,4 +220,9 @@ section {
 .intro-social a i {
     font-size: 25px;
     margin-right: 10px;
+}
+@media screen and (max-width: 1024px) {
+    .home-container {
+        font-size: small;
+    }
 }
